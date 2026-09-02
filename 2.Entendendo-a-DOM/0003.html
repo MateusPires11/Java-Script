@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Somando numeros</h1>
+
+    <input type="number" id="i1"> +
+    <input type="number" id="i2">
+    <input type="button" value="somar" id="somar">
+
+    <p>Resultado é: </p>
+
+
+
+
+
+
+    <script>
+        var i1 = document.getElementById('i1')
+        var i2 = document.getElementById('i2')
+
+
+
+
+        var button = document.getElementById('somar')
+        var resultado = document.getElementsByTagName('p')[0]
+
+        button.addEventListener('click', conta)
+
+
+
+
+        function conta() {
+            var n1 = Number(i1.value)
+            var n2 = Number(i2.value)
+            var r1 = n1 + n2
+            resultado.innerHTML = `Resultado é: ${r1}`
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
